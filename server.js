@@ -13,4 +13,4 @@ app.use(cors());
 
 app.use('url', urlRoutes);
 
-module.exports={app};
+module.exports= app;
