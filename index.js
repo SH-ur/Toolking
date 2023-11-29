@@ -1,9 +1,10 @@
 const app = require('./server');
 //const {db} = require('./db');
 
- 
-    app.use(3001, ()=>{
-        console.log("Inicializando correctamente el puerto " + 3001);
-    })    
+const PORT = 3001;
+
+app.listen(PORT, () => {
+    console.log(`Servidor iniciado en el puerto ${PORT}`);
+});
 
 

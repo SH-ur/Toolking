@@ -1,4 +1,4 @@
-const { PrismaClient } = require("prisma");
+const { PrismaClient } = require("@prisma/client");
 
 const getTheUrl = async () => {
   try {
@@ -7,6 +7,7 @@ const getTheUrl = async () => {
     const infoOfModel = await prisma.url.findMany();
     if (infoOfModel) return infoOfModel;
   } catch (error) {
+    console.log(error);
     throw new Error({ error: error.message });
   }
 };

@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Url" ALTER COLUMN "id" SET DATA TYPE TEXT;

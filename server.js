@@ -11,6 +11,6 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
 
-app.use('url', urlRoutes);
+app.use('/url', urlRoutes);
 
-module.exports={app};
+module.exports=app;
